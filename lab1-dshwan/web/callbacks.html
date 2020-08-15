@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+  Open the console to see output
+  <script>
+    const doSomethingAsync = (callback) => {
+      setTimeout(callback, 2000);
+    }
+    doSomethingAsync(() => { // another form of async, a function is passed as a parameter
+      alert('Hello');
+    });
+  </script>
+</body>
+
+</html>
